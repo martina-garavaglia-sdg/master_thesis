@@ -1,0 +1,45 @@
+\section{Introduction to Julia}
+\label{sec:Introduction_to_Julia}
+The programming language chosen to pursue this thesis project is Julia. Right now, Julia is a language that is little known in the data science world but brings with it great benefits both in terms of performance and usability: it is a flexible dynamic language, appropriate for scientific and numerical computing, with performance comparable to traditional statically-typed languages.  
+
+The most significant departures of Julia from typical dynamic languages are:
+\begin{enumerate}
+    \item The core language imposes very little; Julia Base and the standard library are written in Julia itself, including primitive operations like integer arithmetic;
+    \item A rich language of types for constructing and describing objects, that can also optionally be used to make \textbf{type declarations};
+    \item The ability to define function behavior across many combinations of argument types via \textbf{multiple dispatch};
+    \item Automatic generation of efficient, specialized code for different argument types;
+    \item \textbf{Good performance}, approaching that of statically-compiled languages like C;
+    \item Julia is an \textbf{open source project}, with all code hosted on github and several community projects underway.
+\end{enumerate}
+
+
+\section{Julia vs Python}
+Using Julia as the programming language for this project is not a random choice: the high performance and the possibility that this language allows us to explore are many compares to other languages. 
+
+A brief comparison between Julia and the probably better known language Python can help us understand this choice.
+In terms of \textbf{speed}, Julia is much faster than Python (its execution speed is very close to that of C). From a \textbf{community} point of view, Python has been around from ages and it has a very large community of programmers in the network, so it becomes much easier to get your problems resolve online. Moreover, Julia codes can easily be made converting to or Python codes, whereas Python does not. The \textbf{libraries} in Python are in advance level and there are plenty of it, but in Julia can interfere with libraries of C and Fortran to handle with the tasks that are not already implemented. The last point regards the type of language: Julia is \textbf{dynamically typed} and you can developed code without specifying the type of object you are using, but (as we have already pointed out) the types declaration is one of the things that makes Julia very efficient. Python is also dynamically typed but it doesn't provide the benefits of types declaration.
+
+The following table summarises the reasons why we should decide to use one language rather than the other:
+\\
+\begin{table}[H]
+\centering 
+    \begin{tabular}{|p{10em} c c|}
+    \hline
+    \rowcolor{bluepoli!40}
+     & \textbf{Julia} & \textbf{Python} \T\B \\
+    \hline \hline
+    \textbf{Speed} & \checkmark & \T\B\\
+    \hline
+    \textbf{Community} &  & \checkmark \T\B\\
+    \hline
+    \textbf{Code conversion} & \checkmark &  \T\B\\
+    \hline
+     \textbf{Libraries} &  & \checkmark  \T\B\\
+    \hline
+    \textbf{Dynamically typed} & \checkmark & \checkmark \B\\
+    \hline
+    \end{tabular}
+    \\[20pt]
+    \caption{Julia vs Python: a simple comparison}
+    \label{table:JuliavsPython}
+\end{table}

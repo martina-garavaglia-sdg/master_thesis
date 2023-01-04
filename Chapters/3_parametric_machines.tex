@@ -1,0 +1,24 @@
+\section{Mathematical framework}
+
+We start by setting the mathematical framework for the study of machines. We firstly remember two key notions for deep learning: \textbf{linearity} and \textbf{differentiability}. In order to retain this concepts, we will work with normed vector spaces and Fréchet derivatives (more details in appendix \ref{appendix:a}).
+
+
+\subsection{Machines}
+The intuition behind parametric machines is that neural network can be considered as an endofunction $f : X \to X $ on a space of global functions $X$ (defined on all neurons on all layers). 
+
+In a classical deep learning framework, different layers in a neural network are combined using composition. A sequence of layers
+\begin{equation}
+    X_0 \xrightarrow{l_1} X_1 \xrightarrow{l_2} ... \xrightarrow{l_{d-1}} X_{d-1} \xrightarrow{l_d} X_d
+\end{equation}
+is composed into a map $X_0 \to X_d$, and we denote the composition of functions as:
+\begin{equation}
+    l_dl_{d-1}...l_2l_1 : X_0 \to X_d
+\end{equation}
+
+However, we are going to consider a different framework: we consider a global space $X = \bigoplus_{i=0}^{d} X_i $ and the global endofunction:
+
+\begin{equation}
+    f = \sum_{i=1}^d l_i \in C^1(X,X)
+\end{equation}
+
+In order to establish a relation between the composition of functions and the sum of functions we consider that the output space of the network is the entire $X$ and not only the last layer space $X_d$. 
