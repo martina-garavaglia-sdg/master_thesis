@@ -6,9 +6,8 @@
 - [ ] **Abstract**
 - [ ] **Abstract in lingua italiana**
 - [ ] **Introduction**
-- [ ] **Julia: en efficient programming language** (done, to be revised)
-- [ ] **A brief introduction to deep learning** (done, to be revised)
-- [ ] **Parametric machines**: mathematical framework and machines (the things that are in Mattia's article)
-- [ ] **Julia's implementation**: a chapter for the Julia's implementation of library Streamliner (????)
-- [ ] **A case study:** case study with benchmark dataset we will choose (I think the dataset will have some relevance and contest)
+- [ ] **Background**: chapters in which a introduce Julia, ANN, parametric machines 
+- [ ] **Time machines**: architecture I use for the case study
+- [ ] **Implementation**: implementation of PMdemos explained via pseudocode
+- [ ] **A case study:** case study with benchmark dataset we will choose: Telecom?
 - [ ] **Conclusion**
